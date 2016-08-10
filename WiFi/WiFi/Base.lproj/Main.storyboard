@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhv-1U-egc">
+                                <rect key="frame" x="111" y="174" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9NX-iv-GmV"/>
+                                    <constraint firstAttribute="width" constant="99" id="Upt-L7-NI7"/>
+                                </constraints>
+                                <state key="normal" title="连接">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonShareClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7L-qI-b3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-VU-CcB">
+                                <rect key="frame" x="111" y="263" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.0" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="IEa-6w-NTp"/>
+                                    <constraint firstAttribute="height" constant="30" id="eLd-bj-lQp"/>
+                                </constraints>
+                                <state key="normal" title="发送">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSendClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlk-nd-0g6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nnb-mw-WXS">
+                                <rect key="frame" x="26" y="334" width="268" height="184"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nnb-mw-WXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="4Nj-MU-nOc"/>
+                            <constraint firstItem="Nnb-mw-WXS" firstAttribute="top" secondItem="ewL-VU-CcB" secondAttribute="bottom" constant="41" id="558-Af-4PF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nnb-mw-WXS" secondAttribute="trailing" constant="10" id="HDK-oI-OH9"/>
+                            <constraint firstItem="ewL-VU-CcB" firstAttribute="leading" secondItem="nhv-1U-egc" secondAttribute="leading" id="Kfc-MB-z1e"/>
+                            <constraint firstItem="nhv-1U-egc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsh-d0-X67"/>
+                            <constraint firstItem="ewL-VU-CcB" firstAttribute="top" secondItem="nhv-1U-egc" secondAttribute="bottom" constant="59" id="msM-Oz-ZdS"/>
+                            <constraint firstItem="nhv-1U-egc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="nj2-9o-iCF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nnb-mw-WXS" secondAttribute="bottom" constant="50" id="tsR-eD-4Kb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="Nnb-mw-WXS" id="hwU-i4-mIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="299"/>
+        </scene>
+    </scenes>
+</document>
